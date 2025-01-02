@@ -1,0 +1,22 @@
+#Starting a Project
+django-admin startproject mysite .
+
+#Creating a database
+python manage.py migrate
+
+#Starting the web server
+python manage.py runserver
+
+#Creating an application
+python manage.py startapp blog
+
+#To make Django know that we have some changes in our model.
+python manage.py makemigrations blog
+
+#Adding the model to the database
+python manage.py migrate blog
+
+#Creating a superuser
+python manage.py createsuperuser
+
+
